@@ -8,7 +8,7 @@ YEAR=2026         # 기호상수(올해) 예상값
 echo "--- [과제 채점 시작] ---"
 
 # 2. 컴파일
-g++ main.cpp -o assignment 2>/dev/null
+g++ lab2.cpp -o assignment 2>/dev/null
 if [ $? -ne 0 ]; then
     echo "에러: 컴파일 실패 (0점)"
     exit 0
