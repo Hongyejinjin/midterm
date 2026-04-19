@@ -67,7 +67,6 @@ int main()
 void setItem(item& s1)
     {
         s1 = static_cast<item>(rand() % numOfItems); //형변환
-
     }
 
     void printItem(const item s2)
@@ -75,10 +74,13 @@ void setItem(item& s1)
         switch(s2) {
             case clothing:
                 std::cout << "CLOTHING, ";
+                break;
             case cosmetics:
                 std::cout << "COSMETICS, ";
+                break;
             case electronics:
                 std::cout << "ELECTRONICS, ";
+                break;
             }
     }
     void setPrice(int& s3)
@@ -114,3 +116,4 @@ void setItem(item& s1)
             std::cout << p.priceIncludingTax << " (" << p.price << ", " << getTaxRate(p.price, p.itemType) << ", " << p.price * getTaxRate(p.price, p.itemType) << ")" << std::endl; 
         }
     }
+
